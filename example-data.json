@@ -1,0 +1,100 @@
+{
+  "config": {
+    "business_name": "G15 Test Restaurant",
+    "business_type": "restaurant",
+    "language": "en",
+    "timezone": "America/Montreal",
+    "currency": "CAD"
+  },
+  "inventory": [
+    {
+      "item_id": "chicken-breast",
+      "name": "Chicken Breast",
+      "name_fr": "Poitrine de poulet",
+      "category": "Proteins",
+      "subcategory": "Poultry",
+      "unit": "kg",
+      "current_stock": 12.5,
+      "reorder_point": 5,
+      "reorder_qty": 20,
+      "supplier": "Local Farm",
+      "cost_per_unit": 8.50,
+      "expiry_days": 0,
+      "active": true,
+      "created_at": "2026-04-29",
+      "created_by": "felix"
+    },
+    {
+      "item_id": "oat-milk-1l",
+      "name": "Oat Milk 1L",
+      "name_fr": "Lait d'avoine 1L",
+      "category": "Dairy",
+      "subcategory": "Milk",
+      "unit": "units",
+      "current_stock": 6,
+      "reorder_point": 2,
+      "reorder_qty": 12,
+      "supplier": "Local Dairy",
+      "cost_per_unit": 3.25,
+      "expiry_days": 14,
+      "active": true,
+      "created_at": "2026-04-29",
+      "created_by": "felix"
+    },
+    {
+      "item_id": "romaine-lettuce",
+      "name": "Romaine Lettuce",
+      "name_fr": "Laitue romaine",
+      "category": "Produce",
+      "subcategory": "Greens",
+      "unit": "units",
+      "current_stock": 8,
+      "reorder_point": 4,
+      "reorder_qty": 12,
+      "supplier": "Green Valley Farms",
+      "cost_per_unit": 2.50,
+      "expiry_days": 3,
+      "active": true,
+      "created_at": "2026-04-29",
+      "created_by": "felix"
+    }
+  ],
+  "transactions": [
+    {
+      "tx_id": "tx-20260429-001",
+      "timestamp": "2026-04-29 14:30:00",
+      "item_id": "chicken-breast",
+      "item_name": "Chicken Breast",
+      "tx_type": "used",
+      "quantity": 3.0,
+      "stock_before": 12.5,
+      "stock_after": 9.5,
+      "logged_by": "felix",
+      "notes": ""
+    },
+    {
+      "tx_id": "tx-20260429-002",
+      "timestamp": "2026-04-29 14:35:00",
+      "item_id": "chicken-breast",
+      "item_name": "Chicken Breast",
+      "tx_type": "used",
+      "quantity": 5.0,
+      "stock_before": 9.5,
+      "stock_after": 4.5,
+      "logged_by": "felix",
+      "notes": "Prep for dinner service"
+    },
+    {
+      "tx_id": "tx-20260429-003",
+      "timestamp": "2026-04-29 15:00:00",
+      "item_id": "oat-milk-1l",
+      "item_name": "Oat Milk 1L",
+      "tx_type": "received",
+      "quantity": 12,
+      "stock_before": 6,
+      "stock_after": 18,
+      "logged_by": "felix",
+      "notes": "Delivery from supplier #DOC123456"
+    }
+  ]
+}
